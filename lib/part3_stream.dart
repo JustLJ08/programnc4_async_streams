@@ -1,4 +1,3 @@
-// bin/part3_stream.dart
 import 'dart:async';
 
 Stream<int> numberStream(int n) async* {
