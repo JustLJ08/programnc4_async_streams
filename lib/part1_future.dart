@@ -1,13 +1,11 @@
-// bin/part1_future.dart
 import 'dart:async';
-
-Future<String> fetchData() async {
-  await Future.delayed(Duration(seconds: 2)); // simulate delay
-  return "Data fetched successfully!";
+Future<String> fetchMessage() async {
+  await Future.delayed(Duration(seconds: 5)); 
+  return "⏳ After waiting... Hello, jamesmar! 🚀 Your are programmer in future !";
 }
 
-void main() async {
-  print("Fetching data...");
-  String result = await fetchData();
-  print(result);
+Future<void> main() async {
+  print("🔔 Waiting for a special message...");
+  String message = await fetchMessage();
+  print(message);
 }
